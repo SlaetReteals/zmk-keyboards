@@ -1,13 +1,13 @@
 file_format: "1"
 id: slaetiny
-name: slaetiny
+name: SlaeTiny
 type: shield
-url:  
-requires:
-  - i2c_oled
+url: https://github.com/JordanNiphan/zmk
+requires: [pro_micro]
+exposes: [i2c_oled]
 features:
-  - display
   - keys
+  - display
 siblings:
   - slaetiny_left
   - slaetiny_right
