@@ -1,0 +1,13 @@
+file_format: "1"
+id: slaetiny
+name: slaetiny
+type: shield
+url:  
+requires:
+  - i2c_oled
+features:
+  - display
+  - keys
+siblings:
+  - slaetiny_left
+  - slaetiny_right

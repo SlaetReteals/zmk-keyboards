@@ -1,0 +1,13 @@
+file_format: "1"
+id: tklhandwire
+name: tklhandwire
+type: shield
+url:  
+requires:
+  - i2c_oled
+features:
+  - display
+  - keys
+siblings:
+  - tklhandwire_left
+  - tklhandwire_right
