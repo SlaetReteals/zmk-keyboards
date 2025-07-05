@@ -1,4 +1,4 @@
-name: zmk-keyboard-slaetnodead
+name: zmk-keyboards
 build:
   settings:
     board_root: .
