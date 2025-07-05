@@ -1,17 +1,19 @@
 # SPDX-License-Identifier: Apache-2.0
 
 zephyr_library()
-zephyr_library_sources_ifdef(CONFIG_DISPLAY_MCUX_ELCDIF	display_mcux_elcdif.c)
-zephyr_library_sources_ifdef(CONFIG_DISPLAY_NRF_LED_MATRIX display_nrf_led_matrix.c)
-zephyr_library_sources_ifdef(CONFIG_DUMMY_DISPLAY	display_dummy.c)
 
-zephyr_library_sources_ifdef(CONFIG_SSD1306		ssd1306.c)
+zephyr_library_sources(${ZEPHYR_BASE}/misc/empty_file.c)
+zephyr_library_include_directories(${ZEPHYR_LVGL_MODULE_DIR})
+zephyr_library_include_directories(${ZEPHYR_BASE}/lib/gui/lvgl/)
+zephyr_library_include_directories(${ZEPHYR_BASE}/drivers)
+zephyr_library_include_directories(${CMAKE_SOURCE_DIR}/include)
 
-if (CONFIG_SDL_DISPLAY)
-	zephyr_library_sources(display_sdl.c)
-	if (CONFIG_NATIVE_APPLICATION)
-		zephyr_library_sources(display_sdl_bottom.c)
-	else()
-		target_sources(native_simulator INTERFACE display_sdl_bottom.c)
-	endif()
-endif()
+zephyr_library_sources(widgets/battery_status.c)
+
+zephyr_library_sources(widgets/layer_status.c)
+zephyr_library_sources(widgets/modifiers.c)
+zephyr_library_sources(widgets/modifiers_sym.c)
+zephyr_library_sources(widgets/output_status.c)
+zephyr_library_sources(widgets/output_status_sym.c)
+
+zephyr_library_sources(display/sd1306.c)
