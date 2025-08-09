@@ -132,7 +132,7 @@
                 compatible = "zmk,keymap";
                 default_layer {
 
-                        bindings = <l
+                        bindings = <
                             &lt FUNCTION Q  &kp W       &kp F       &P_to_B     &kp Y                   &kp J       &kp L       &kp U       &kp Y               &kp SEMI     
                             &kp A           &kp R       &kp S       &kp T       &kp G                   &kp M       &kp N       &kp E       &lt NAVLAYER I      &kp O        
                             &kp Z           &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp COMMA   &lt MOUSE DOT       &kp FSLH     
