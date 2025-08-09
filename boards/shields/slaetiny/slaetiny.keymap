@@ -17,6 +17,17 @@
 #define QWERTY      6
 
 
+/ {
+    behaviors {
+        P_to_B: tap_dance_P_to_B {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp P>, <&kp B>:
+        };
+    };
+
+};
 
 / {
         combos {
@@ -122,7 +133,7 @@
                 default_layer {
 
                         bindings = <
-                            &kp Q   &kp W   &kp F       &kp P       &lt FUNCTION B                      &kp J       &kp L       &kp U       &kp Y               &kp SEMI     
+                            &lt FUNCTION Q   &kp W   &kp F       &kp P       &P_to_B                      &kp J       &kp L       &kp U       &kp Y               &kp SEMI     
                             &kp A   &kp R   &kp S       &kp T       &kp G                               &kp M       &kp N       &kp E       &lt NAVLAYER I      &kp O        
                             &kp Z   &kp X   &kp C       &kp D       &kp V                               &kp K       &kp H       &kp COMMA   &lt MOUSE DOT       &kp FSLH     
                                             &kp RSHIFT    &kp LCTRL   &lt NUMLAYER SPACE          &sk RSHIFT  &kp RCTRL   &kp RALT 
