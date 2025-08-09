@@ -133,7 +133,7 @@
                 default_layer {
 
                         bindings = <
-                            &lt FUNCTION Q  &kp W       &kp F       &P_to_B     &kp Y                   &kp J       &kp L       &kp U       &kp Y               &kp SEMI     
+                            &lt FUNCTION Q  &kp W       &kp F       &kp P       &kp B                   &kp J       &kp L       &kp U       &kp Y               &kp SEMI     
                             &kp A           &kp R       &kp S       &kp T       &kp G                   &kp M       &kp N       &kp E       &lt NAVLAYER I      &kp O        
                             &kp Z           &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp COMMA   &lt MOUSE DOT       &kp FSLH     
                                             &kp RSHIFT    &kp LCTRL   &lt NUMLAYER SPACE          &sk RSHIFT  &kp RCTRL   &kp RALT 
@@ -173,9 +173,9 @@
                 FUNCTION {
 
                         bindings = <
-                            &kp F1  &kp F2  &kp F3  &kp F4  &trans                  &trans  &trans  &trans  &trans  &trans 
-                            &kp F6  &kp F7  &kp F8  &kp F9  &kp F10                 &trans  &trans  &trans  &trans  &trans 
-                            &kp F11 &kp F12 &kp F13 &kp F14 &kp F15                 &trans  &trans  &trans  &trans  &trans 
+                            &kp trans   &kp F1  &kp F2  &kp F3  &kp F4                  &trans  &trans  &trans  &trans  &trans 
+                            &kp F6      &kp F7  &kp F8  &kp F9  &kp F10                 &trans  &trans  &trans  &trans  &trans 
+                            &kp F11     &kp F12 &kp F13 &kp F14 &kp F15                 &trans  &trans  &trans  &trans  &trans 
                                             &trans      &trans    &bootloader         &bootloader  &trans &trans                  
                         >;
                 };
