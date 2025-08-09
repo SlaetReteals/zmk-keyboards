@@ -184,7 +184,7 @@
 
                         bindings = <
                             &bootloader     &bootloader     &bootloader     &bootloader     &bootloader             &bootloader     &bootloader     &bootloader     &bootloader     &bootloader 
-                            &kp K_SLEEP     &kp K_SLEEP     &kp K_SLEEP p    &kp K_SLEEP     &kp K_SLEEP             &kp K_SLEEP     &kp K_SLEEP     &kp K_SLEEP     &kp K_SLEEP     &kp K_SLEEP  
+                            &kp K_SLEEP     &kp K_SLEEP     &kp K_SLEEP     &kp K_SLEEP     &kp K_SLEEP             &kp K_SLEEP     &kp K_SLEEP     &kp K_SLEEP     &kp K_SLEEP     &kp K_SLEEP  
                             &soft_off       &soft_off       &soft_off       &soft_off       &soft_off               &soft_off       &soft_off       &soft_off       &soft_off       &soft_off 
                                                             &trans          &trans          &trans                  &trans          &trans          &trans                  
                         >;
