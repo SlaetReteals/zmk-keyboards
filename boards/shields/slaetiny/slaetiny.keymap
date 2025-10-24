@@ -225,7 +225,7 @@
 
         bindings = <
             &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans 
-            &trans  &trans  &trans  &macro_alt_shift_plus  &trans                 &trans  &trans  &trans  &trans  &trans 
+            &trans  &trans  &trans  &trans  &trans                 &trans  &trans  &trans  &trans  &trans 
             &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans 
                             &trans      &trans    &trans                    &trans  &trans &trans                  
         >;
