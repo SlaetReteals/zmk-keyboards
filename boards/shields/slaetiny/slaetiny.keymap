@@ -55,10 +55,10 @@
             key-positions = <11 12>;
             bindings = <&mkp MB2>;
         };
-        combo_mclk {
+        combo_stickymacro {
             timeout-ms = <50>;
             key-positions = <11 12 13>;
-            bindings = <&mkp MB3>;
+            bindings = <&sl MACRO_LAYER>;
         };
         combo_del {
             timeout-ms = <50>;
@@ -110,7 +110,11 @@
             key-positions = <1 11 21>;
             bindings = <&tog QWERTY>;
         };
-       
+            combo_homelayer {
+            timeout-ms = <50>;
+            key-positions = <1 5>;
+            bindings = <&to DEFAULT>;
+        };
     };
 
 };
@@ -125,18 +129,7 @@
         };
     };
 };
-/ {
-    behaviors {
-        ctrl_layer: ctrl_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CTRL_LAYER";
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&tog>;
-        };
-    };
-};
+
 /{
         keymap {
                 compatible = "zmk,keymap";
@@ -146,7 +139,7 @@
             &lt FUNCTION Q  &kp W       &kp F       &kp P       &kp B                   &kp J       &kp L       &kp U       &kp Y               &kp SEMI     
             &kp A           &kp R       &kp S       &kp T       &kp G                   &kp M       &kp N       &kp E       &lt NAVLAYER I      &kp O        
             &kp Z           &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp COMMA   &lt MOUSE DOT       &kp FSLH     
-                            &kp RSHIFT    &ctrl_layer LCTRL MACRO_LAYER    &lt NUMLAYER SPACE          &sk RSHIFT  &kp RCTRL   &kp RALT 
+                            &kp RSHIFT    &kp LCTRL    &lt NUMLAYER SPACE          &sk RSHIFT  &kp RCTRL   &kp RALT 
 
         >;
                 };
@@ -199,17 +192,7 @@
                                             &trans          &trans          &trans                  &trans          &trans          &trans                  
         >;
                 };
-    
-                MACRO_LAYER {
-
-        bindings = <
-            &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans 
-            &trans  &trans  &trans  &macro_alt_shift_plus  &trans                   &trans  &trans  &trans  &trans  &trans 
-            &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans 
-                            &trans      &trans    &trans                    &trans  &trans &trans                  
-        >;
-                };
-    
+        
                 QWERTY {
 
         bindings = <
@@ -221,6 +204,16 @@
                 };
 
         };
+
+                MACRO_LAYER {
+
+        bindings = <
+            &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans 
+            &trans  &trans  &trans  &macro_alt_shift_plus  &trans                   &trans  &trans  &trans  &trans  &trans 
+            &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans 
+                            &trans      &trans    &trans                    &trans  &trans &trans                  
+        >;
+                };
 };
 
 /* You will never find what you seek... stop looking */
