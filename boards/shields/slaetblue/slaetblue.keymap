@@ -6,8 +6,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-
-
 #define DEFAULT     0
 #define NUMLAYER    1
 #define NAVLAYER    2
@@ -15,7 +13,6 @@
 #define FUNCTION    4
 #define BOOT        5
 #define QWERTY      6
-
 
 / {
     behaviors {
@@ -27,6 +24,22 @@
         };
     };
 
+};
+
+/ {
+    macros {
+        altshiftplus: altshiftplus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp PLUS>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+    };
 };
 
 / {
@@ -122,7 +135,16 @@
             key-positions = <1 11 21>;
             bindings = <&tog QWERTY>;
         };
-       
+            combo_homelayer {
+            timeout-ms = <50>;
+            key-positions = <1 5>;
+            bindings = <&to DEFAULT>;
+        };
+            combo_stickymacro {
+            timeout-ms = <50>;
+            key-positions = <4 5>;
+            bindings = <&leader1>;
+        };
     };
 
 };
