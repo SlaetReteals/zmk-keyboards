@@ -13,17 +13,15 @@
 #define FUNCTION    4
 #define BOOT        5
 #define QWERTY      6
-
 / {
     behaviors {
-        P_to_B: tap_dance_P_to_B {
-            compatible = "zmk,behavior-tap-dance";
+        leader1: leader1 {
+            compatible = "zmk,behavior-leader-key";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp P>, <&kp B>;
+            usb { sequence = <U S B>; bindings = <&out OUT_USB>; };
+            asp { sequence = <A S P>; bindings = <&altshiftplus>; };
         };
     };
-
 };
 
 / {
