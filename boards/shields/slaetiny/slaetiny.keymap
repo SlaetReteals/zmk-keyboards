@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 4000
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 75
 
 #include <dt-bindings/zmk/pointing.h>
@@ -27,7 +27,7 @@
 &mmv {
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-        time-to-max-speed-ms = <300>;
+        time-to-max-speed-ms = <500>;
         acceleration-exponent = <1>;
         };
 
@@ -77,8 +77,8 @@
 
         bindings = <
             &trans             &msc SCRL_DOWN      &mmv MOVE_UP    &msc SCRL_UP        &trans                   &mkp MB1      &mkp MB1      &mkp MB3  &mkp MB2  &trans 
-            &mmv MOVE_X(-400)  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &mmv MOVE_X(400)         &trans      &trans      &trans  &trans  &trans 
-            &trans             &trans              &trans          &mmv MOVE_Y(-400)   &trans                   &trans      &trans      &trans  &trans  &trans 
+            &mmv MOVE_X(-8000)  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &mmv MOVE_X(8000)         &trans      &trans      &trans  &trans  &trans 
+            &trans             &trans              &trans          &mmv MOVE_Y(-8000)   &trans                   &trans      &trans      &trans  &trans  &trans 
                                         &trans          &trans              &trans                                      &mkp MB1    &mkp MB3    &mkp MB2                  
         >;
                 };
