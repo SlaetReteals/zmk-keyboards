@@ -5,5 +5,6 @@
         #binding-cells = <0>;
         usb { sequence = <U S B>; bindings = <&out OUT_USB>; };
         asp { sequence = <A S P>; bindings = <&altshiftplus>; };
+        };
     };
 };
