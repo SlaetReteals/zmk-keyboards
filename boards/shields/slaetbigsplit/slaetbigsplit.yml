@@ -1,0 +1,13 @@
+file_format: "1"
+id: slaetbigsplit
+name: slaetbigsplit
+type: shield
+url:  
+requires:
+  - i2c_oled
+features:
+  - display
+  - keys
+siblings:
+  - slaetbigsplit_left
+  - slaetbigsplit_right
