@@ -1,0 +1,20 @@
+behaviors {
+    leader1: leader1 {
+        compatible = "zmk,behavior-leader-key";
+        #binding-cells = <0>;
+        usb { sequence = <U S B>; bindings = <&out OUT_USB>; };
+        asp { sequence = <A S P>; bindings = <&altshiftplus>; };
+    };
+    mouse_speed_up: mouse_speed_up {
+        compatible = "zmk,behavior-mouse-emulation";
+        label = "MOUSE_SPEED_UP";
+        move_x_increase = <100>;
+        move_y_increase = <100>;
+    };
+    mouse_speed_down: mouse_speed_down {
+        compatible = "zmk,behavior-mouse-emulation";
+        label = "MOUSE_SPEED_DOWN";
+        move_x_decrease = <100>; // Adjust value as needed
+        move_y_decrease = <100>; // Adjust value as needed
+    };
+};
