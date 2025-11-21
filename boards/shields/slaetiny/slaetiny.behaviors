@@ -1,4 +1,5 @@
-behaviors {
+/ {
+    behaviors {
     leader1: leader1 {
         compatible = "zmk,behavior-leader-key";
         #binding-cells = <0>;
@@ -16,5 +17,6 @@ behaviors {
         label = "MOUSE_SPEED_DOWN";
         move_x_decrease = <100>; // Adjust value as needed
         move_y_decrease = <100>; // Adjust value as needed
+        };
     };
 };
