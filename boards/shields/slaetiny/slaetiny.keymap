@@ -4,6 +4,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include "slaetiny.macros"
+#include "slaetiny.combos"
+#include "slaetiny.behaviors"
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 2000
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 75
@@ -34,11 +36,7 @@
         };
 
 /{
-        keymap {
-
-                #include "slaetiny.combos"
-                #include "slaetiny.behaviors"
-                
+        keymap {   
 
 
                 compatible = "zmk,keymap";
