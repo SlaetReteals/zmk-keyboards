@@ -1,0 +1,11 @@
+file_format: "1"
+id: slaetnodead
+name: slaetnodead
+type: shield
+url:  
+requires: [waveshare_rp2040_zero]
+features:
+  - keys
+siblings:
+  - slaetnodead_left
+  - slaetnodead_right

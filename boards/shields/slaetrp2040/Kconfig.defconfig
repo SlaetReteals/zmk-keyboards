@@ -1,0 +1,6 @@
+if SHIELD_SLAETRP2040
+
+config ZMK_KEYBOARD_NAME
+    default "SlaetRP2040"
+
+endif
