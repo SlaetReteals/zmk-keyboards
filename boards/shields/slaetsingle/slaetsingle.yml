@@ -1,0 +1,10 @@
+file_format: "1"
+id: slaetsingle
+name: slaetsingle
+type: shield
+url: https://github.com/SlaetReteals/zmk
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - slaetsingle
