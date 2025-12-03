@@ -4,8 +4,7 @@
 
 / {
         chosen {
-        zmk,kscan=&kscan_direct;
-        zmk,matrix_transform=&direct_matrix_transform;
+        zmk,physical-layout=&direct_physical_layout;
         };
 
     direct_matrix_transform: direct_matrix_transform {
@@ -29,4 +28,9 @@
         ;
 
     };
+};
+
+&direct_physical_layout {
+    kscan = <&kscan_direct>;
+    transform = <&direct_matrix_transform>;
 };
