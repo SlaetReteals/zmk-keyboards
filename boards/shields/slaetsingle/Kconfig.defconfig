@@ -1,9 +1,6 @@
 if SHIELD_SLAETSINGLE
 
 config ZMK_KEYBOARD_NAME
-    default "slaetsingle"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+    default "SlaetSingle"
 
 endif
