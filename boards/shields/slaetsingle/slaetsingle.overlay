@@ -1,4 +1,4 @@
-#include "slaetiny.dtsi"
+#include "slaetsingle.dtsi"
 
 &kscan0 {
    compatible = "zmk,kscan-gpio-matrix";
