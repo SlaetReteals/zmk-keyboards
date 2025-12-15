@@ -11,5 +11,33 @@
             , <&macro_release &kp LSHFT>
             ;
         };
+        email_slaet: email_slaet {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings
+            = <&kp S>
+            , <&kp L>
+            , <&kp A>
+            , <&kp E>
+            , <&kp T>
+            , <&kp DOT>
+            , <&kp R>
+            , <&kp A>
+            , <&kp H>
+            , <&kp L>
+            , <&kp AT>
+            , <&kp G>
+            , <&kp M>
+            , <&kp A>
+            , <&kp I>
+            , <&kp L>
+            , <&kp DOT>
+            , <&kp C>
+            , <&kp O>
+            , <&kp M>
+            ;      
+        };
     };
 };
