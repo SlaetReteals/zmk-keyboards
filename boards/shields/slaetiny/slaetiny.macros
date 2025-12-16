@@ -1,46 +1,45 @@
-/ {
-    macros {
-        //keybinding is <&gem>
-        gem: gem {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp G &kp E &kp M &kp I &kp N &kp I &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp DOT &kp C &kp O &kp M>
-                ;
-            };
-        //keybinding is <&mon>
-        mon: mon {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp M &kp O &kp N &kp K &kp E &kp Y &kp T &kp Y &kp P &kp E &kp DOT &kp C &kp O &kp M>
-                ;
-            };
-        //keybinding is <&niph>
-        niph: niph {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp N>
-                , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp I &kp P &kp H &kp A &kp N &kp P &kp R &kp A &kp S &kp A &kp R &kp T>
-                ;
-            };
-        //keybinding is <&sch>
-        sch: sch {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp S &kp C &kp H &kp O &kp O &kp L>
-                ;
-            };
-        //keybinding is <&email>
-        email: email {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp S &kp L &kp A &kp E &kp T &kp DOT &kp R &kp A &kp H &kp L &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>
-                ;
-            };
+macros {
+    //keybinding is <&gem>
+    gem: gem {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp G &kp E &kp M &kp I &kp N &kp I &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp DOT &kp C &kp O &kp M>
+            ;
+        };
+    //keybinding is <&mon>
+    mon: mon {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp M &kp O &kp N &kp K &kp E &kp Y &kp T &kp Y &kp P &kp E &kp DOT &kp C &kp O &kp M>
+            ;
+        };
+    //keybinding is <&niph>
+    niph: niph {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &kp LSHFT>
+            , <&macro_tap &kp N>
+            , <&macro_release &kp LSHFT>
+            , <&macro_tap &kp I &kp P &kp H &kp A &kp N &kp P &kp R &kp A &kp S &kp A &kp R &kp T>
+            ;
+        };
+    //keybinding is <&sch>
+    sch: sch {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp S &kp C &kp H &kp O &kp O &kp L>
+            ;
+        };
+    //keybinding is <&email>
+    email: email {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp S &kp L &kp A &kp E &kp T &kp DOT &kp R &kp A &kp H &kp L &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>
+            ;
+        };
 };
