@@ -7,7 +7,6 @@ behaviors {
 		time-to-max-speed-ms = <500>;
 		acceleration-exponent = <1>;
 	};
-
 	msc: mouse_scroll {
 		compatible = "zmk,behavior-input-two-axis";
 		#binding-cells = <1>;
@@ -26,5 +25,5 @@ behaviors {
 		niph{ sequence = <N I P H>; bindings = <&niph>; };
 		mon { sequence = <M O N>; bindings = <&mon>; };
 		gem { sequence = <G E M>; bindings = <&gem>; };
-		};
 	};
+};

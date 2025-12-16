@@ -7,8 +7,6 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 4000
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 75
 
-
-
 #define DEFAULT     0
 #define NUMLAYER    1
 #define NAVLAYER    2
@@ -31,7 +29,6 @@
 				&kp A           &kp R       &kp S       &kp T       &kp G                   &kp M       &kp N       &kp E       &lt NAVLAYER I      &kp O        
 				&kp Z           &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp COMMA   &lt MOUSE DOT       &kp FSLH     
 								&kp RSHIFT    &kp LCTRL    &lt NUMLAYER SPACE          &sk RSHIFT  &kp RCTRL   &kp RALT 
-
 			>;
 		};
 		NUMLAYER {
