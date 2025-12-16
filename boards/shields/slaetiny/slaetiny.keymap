@@ -9,6 +9,10 @@
 #undef ZMK_POINTING_DEFAULT_SCRL_VAL
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 75
 
+#include "slaetiny.macros"
+#include "slaetiny.combos"
+#include "slaetiny.behaviors"
+
 #define DEFAULT     0
 #define NUMLAYER    1
 #define NAVLAYER    2
@@ -18,9 +22,7 @@
 #define QWERTY      6
 #define MACRO_LAYER 7
 
-#include "slaetiny.macros"
-#include "slaetiny.combos"
-#include "slaetiny.behaviors"
+
 
 / {
 	keymap {
