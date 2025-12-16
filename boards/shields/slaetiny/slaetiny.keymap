@@ -4,26 +4,17 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#undef ZMK_POINTING_DEFAULT_MOVE_VAL
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 4000
-#undef ZMK_POINTING_DEFAULT_SCRL_VAL
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 75
-
 #define DEFAULT     0
-
-#include "slaetiny.behaviors"
-#include "slaetiny.macros"
-#include "slaetiny.combos"
 
 /{
 	keymap {
 	compatible = "zmk,keymap";
 	default_layer {
 		bindings = <
-			&lt FUNCTION Q  &kp W       &kp F       &kp P       &kp B                   &kp J       &kp L       &kp U       &kp Y               &kp SEMI     
-			&kp A           &kp R       &kp S       &kp T       &kp G                   &kp M       &kp N       &kp E       &lt NAVLAYER I      &kp O        
-			&kp Z           &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp COMMA   &lt MOUSE DOT       &kp FSLH     
-							&kp RSHIFT    &kp LCTRL    &lt NUMLAYER SPACE          &sk RSHIFT  &kp RCTRL   &kp RALT 
+			&kp Q			&kp W       &kp F       &kp P       &kp B                   &kp J       &kp L       &kp U       &kp Y			&kp SEMI     
+			&kp A           &kp R       &kp S       &kp T       &kp G                   &kp M       &kp N       &kp E       &kp I			&kp O        
+			&kp Z           &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp COMMA   &kp DOT			&kp FSLH     
+							&kp RSHIFT    &kp LCTRL    &kp SPACE          &sk RSHIFT  &kp RCTRL   &kp RALT 
 			>;
 		};
 	};
