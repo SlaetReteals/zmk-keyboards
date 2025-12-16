@@ -1,15 +1,13 @@
-/ {
-    behaviors {
-    leader1: leader1 {
-        compatible = "zmk,behavior-leader-key";
-        #binding-cells = <0>;
-        usb  { sequence = <U S B>; bindings = <&out OUT_USB>; };
-        ble  { sequence = <B L E>; bindings = <&out OUT_BLE>; };
-		email { sequence = <E M A I L>; bindings = <&email>; };
-		sch { sequence = <S C H>; bindings = <&sch>; };
-		niph{ sequence = <N I P H>; bindings = <&niph>; };
-		mon { sequence = <M O N>; bindings = <&mon>; };
-		gem { sequence = <G E M>; bindings = <&gem>; };
-		};
-    };
+behaviors {
+leader1: leader1 {
+	compatible = "zmk,behavior-leader-key";
+	#binding-cells = <0>;
+	usb  { sequence = <U S B>; bindings = <&out OUT_USB>; };
+	ble  { sequence = <B L E>; bindings = <&out OUT_BLE>; };
+	email { sequence = <E M A I L>; bindings = <&email>; };
+	sch { sequence = <S C H>; bindings = <&sch>; };
+	niph{ sequence = <N I P H>; bindings = <&niph>; };
+	mon { sequence = <M O N>; bindings = <&mon>; };
+	gem { sequence = <G E M>; bindings = <&gem>; };
+	};
 };
