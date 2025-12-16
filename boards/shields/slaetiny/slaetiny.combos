@@ -70,24 +70,9 @@ combos {
 		key-positions = <21 22>;
 		bindings = <&kp LGUI>;
 	};           
-		combo_right_mouse_toggle {
-		timeout-ms = <50>;
-		key-positions = <5 6 7>;
-		bindings = <&tog MOUSE>;
-	};
 		combo_bt_clear {
 		timeout-ms = <50>;
 		key-positions = <0 10 20>;
 		bindings = <&bt BT_CLR_ALL>;
-	};
-		combo_qwerty {
-		timeout-ms = <50>;
-		key-positions = <1 11 21>;
-		bindings = <&tog QWERTY>;
-	};
-		combo_homelayer {
-		timeout-ms = <50>;
-		key-positions = <1 5>;
-		bindings = <&to DEFAULT>;
 	};
 };
