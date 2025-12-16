@@ -18,11 +18,12 @@
 #define QWERTY      6
 #define MACRO_LAYER 7
 
-#include "slaetiny.macros"
-#include "slaetiny.combos"
-#include "slaetiny.behaviors"
+
 
 / {
+	#include "slaetiny.macros"
+	#include "slaetiny.combos"
+	#include "slaetiny.behaviors"
 	keymap {
 	compatible = "zmk,keymap";
 	default_layer {
