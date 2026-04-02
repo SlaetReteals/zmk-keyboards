@@ -19,14 +19,12 @@
 #define MACRO_LAYER 7
 #define TMUX        8
 
-// Included at the top level because they have their own root node wrappers
+// All local includes must be at the top level and contain their own root node wrappers
+#include "slaetiny.macros"
 #include "slaetiny.combos"
 #include "slaetiny.behaviors"
 
 / {
-    // Included inside the root because it contains raw nodes
-    #include "slaetiny.macros"
-    
     keymap {
         compatible = "zmk,keymap";
         
