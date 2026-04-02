@@ -17,6 +17,7 @@
 #define BOOT        5
 #define QWERTY      6
 #define MACRO_LAYER 7
+#define TMUX        8
 
 
 
@@ -60,7 +61,7 @@
 		};
 	FUNCTION {
 		bindings = <
-			&trans      &kp F1  &kp F2  &kp F3  &kp F4                  &trans  &trans  &trans  &trans  &trans 
+			&mo TMUX    &kp F1  &kp F2  &kp F3  &kp F4                  &trans  &trans  &trans  &trans  &trans 
 			&kp F6      &kp F7  &kp F8  &kp F9  &kp F10                 &trans  &trans  &trans  &trans  &trans 
 			&kp F11     &kp F12 &kp F13 &kp F14 &kp F15                 &trans  &trans  &trans  &trans  &trans 
 							&trans      &trans    &bootloader         &bootloader  &trans &trans                  
@@ -89,7 +90,13 @@
 			&trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans 
 							&trans      &trans    &trans                    &trans  &trans &trans                  
 			>;
-		};
-	};
+		};	TMUX {
+		bindings = <
+			&tmux_new_window   &tmux_prev_window   &tmux_next_window   &tmux_toggle_zoom   &tmux_copy_mode        &tmux_paste_buffer   &kp L     &kp H   &kp J      &kp K
+			&kp O              &kp P               &kp Q               &kp W               &kp X                 &kp Z               &kp C     &kp V   &kp B      &kp N
+			&trans             &trans              &trans              &trans              &trans                &trans              &trans    &trans  &trans     &trans
+						&trans            &trans              &trans                  &trans      &trans &trans
+			>;
+		};	};
 };
 /* You will never find what you seek... stop looking */
