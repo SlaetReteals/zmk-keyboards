@@ -56,48 +56,60 @@ macros {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings = <
-            &macro_tap &tmux_pref
-            , &macro_tap &kp C
+            &macro_press &kp LCTRL
+            &macro_tap &kp B
+            &macro_release &kp LCTRL
+            &macro_tap &kp C
         >;
     };
     tmux_next_window: tmux_next_window {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings = <
-            &macro_tap &tmux_pref
-            , &macro_tap &kp N
+            &macro_press &kp LCTRL
+            &macro_tap &kp B
+            &macro_release &kp LCTRL
+            &macro_tap &kp N
         >;
     };
     tmux_prev_window: tmux_prev_window {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings = <
-            &macro_tap &tmux_pref
-            , &macro_tap &kp P
+            &macro_press &kp LCTRL
+            &macro_tap &kp B
+            &macro_release &kp LCTRL
+            &macro_tap &kp P
         >;
     };
     tmux_toggle_zoom: tmux_toggle_zoom {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings = <
-            &macro_tap &tmux_pref
-            , &macro_tap &kp Z
+            &macro_press &kp LCTRL
+            &macro_tap &kp B
+            &macro_release &kp LCTRL
+            &macro_tap &kp Z
         >;
     };
     tmux_copy_mode: tmux_copy_mode {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings = <
-            &macro_tap &tmux_pref
-            , &macro_tap &kp LBRC
+            &macro_press &kp LCTRL
+            &macro_tap &kp B
+            &macro_release &kp LCTRL
+            &macro_tap &kp LBRC
         >;
     };
     tmux_paste_buffer: tmux_paste_buffer {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings = <
-            &macro_tap &tmux_pref
-            , &macro_tap &kp RBRC
+            &macro_press &kp LCTRL
+            &macro_tap &kp B
+            &macro_release &kp LCTRL
+            &macro_tap &kp RBRC
         >;
     };
 };
