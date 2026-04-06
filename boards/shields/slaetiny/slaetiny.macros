@@ -121,6 +121,7 @@ macros {
             , <&macro_release &kp LCTRL>
             , <&macro_tap &kp PERCENT >
             ;
+    };
 
     tmux_new_window: tmux_new_window {
         compatible = "zmk,behavior-macro";
