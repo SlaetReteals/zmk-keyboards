@@ -102,6 +102,17 @@
                 ;
         };
 
+        tmux_split_horizontal: tmux_split_horizontal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp B>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp DQT >
+                ;
+        };
+
         tmux_new_window: tmux_new_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
