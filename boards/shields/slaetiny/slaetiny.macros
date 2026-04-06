@@ -188,5 +188,6 @@
             , <&macro_release &kp LCTRL>
             , <&macro_tap &kp RBRC>
             ;
+        };
     };
 };
