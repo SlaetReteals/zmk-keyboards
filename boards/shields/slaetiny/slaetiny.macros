@@ -1,4 +1,5 @@
-macros {
+/ {
+    macros {
     //keybinding is <&gem>
     gem: gem {
         compatible = "zmk,behavior-macro";
