@@ -93,19 +93,19 @@
         
         MACRO_LAYER {
             bindings = <
-                &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans 
-                &trans  &trans  &trans  &trans  &trans                 &trans  &trans  &trans  &trans  &trans 
-                &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans 
-                                &trans      &trans    &trans                    &trans  &trans &trans                
+                &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans 
+                &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans 
+                &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans 
+                                &trans      &trans    &trans        &trans  &trans &trans                
             >;
         };    
         
         TMUX {
             bindings = <
-                &tmux_new_window   &tmux_prev_window   &tmux_next_window   &tmux_toggle_zoom   &tmux_copy_mode        &tmux_paste_buffer   &kp L      &kp H   &kp J      &kp K
-                &kp O              &kp P               &kp Q               &kp W               &kp X                  &kp Z                &kp C      &kp V   &kp B      &kp N
-                &trans             &trans              &trans              &trans              &trans                 &trans               &trans     &trans  &trans     &trans
-                                                       &trans              &trans              &trans                 &trans               &trans     &trans 
+                &trans  &tmux_split_horizontal  &tmux_pane_up    &tmux_split_vert   &tmux_new_window        &tmux_paste_buffer   &kp L      &kp H   &kp J      &kp K
+                &kp O   &tmux_pane_left         &tmux_pane_down  &tmux_pane_right   &tmux_next_window       &kp Z                &kp C      &kp V   &kp B      &kp N
+                &trans  &trans                  &tmux_copy_mode  &trans             &tmux_paste_buffer      &trans               &trans     &trans  &trans     &trans
+                                                &trans           &trans             &trans                  &trans               &trans     &trans 
             >;
         };    
     };

@@ -46,7 +46,7 @@
             bindings
                 = <&macro_tap &kp S &kp L &kp A &kp E &kp T &kp DOT &kp R &kp A &kp H &kp L &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>
                 ;
-        }; // <--- THIS WAS THE MISSING BRACKET!
+        };
 
         tmux_pref: tmux_pref {
             compatible = "zmk,behavior-macro";
@@ -55,6 +55,50 @@
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp B>
                 , <&macro_release &kp LCTRL>
+                ;
+        };
+
+        tmux_pane_left: tmux_pane_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp B>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp LEFT>
+                ;
+        };
+
+        tmux_pane_right: tmux_pane_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp B>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp RIGHT>
+                ;
+        };
+
+        tmux_pane_up: tmux_pane_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp B>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp UP>
+                ;
+        };
+
+        tmux_pane_down: tmux_pane_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp B>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp DOWN>
                 ;
         };
 
