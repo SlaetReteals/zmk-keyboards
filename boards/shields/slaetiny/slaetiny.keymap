@@ -19,7 +19,6 @@
 #define MACRO_LAYER 7
 #define TMUX        8
 
-// All local includes must be at the top level and contain their own root node wrappers
 #include "slaetiny.macros"
 #include "slaetiny.combos"
 #include "slaetiny.behaviors"

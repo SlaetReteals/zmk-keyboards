@@ -5,7 +5,7 @@
         combo_tmux_layer {
             timeout-ms = <50>;
             key-positions = <11 13>;
-            bindings = <&mo TMUX>;
+            bindings = <&sl TMUX>;
         };
         
         combo_esc {
