@@ -1,0 +1,10 @@
+file_format: "1"
+id: slaetjoystick
+name: Slaet Joystick
+type: shield
+url:  
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - slaetjoystick

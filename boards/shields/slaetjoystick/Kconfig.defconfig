@@ -1,0 +1,6 @@
+if SHIELD_SLAETJOYSTICK
+
+config ZMK_KEYBOARD_NAME
+    default "Slaet Joystick"
+
+endif
